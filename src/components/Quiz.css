@@ -1,0 +1,214 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@400;700&display=swap');
+
+
+.container{
+    width: 640px;
+    height: ;
+    margin: auto;
+    margin-top: 150px;
+    background: white;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 40px 50px ;
+    
+}
+
+.container hr{
+    height: 2px;
+    border: none;
+    background: #707070;
+}
+
+.container h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.container ul  li {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.container button{
+    margin: auto;
+    width: 250px;
+    height: 65px;
+    background: #543e94;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+
+.container .index{
+    margin: auto;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.correct{
+    background: #dffff2;
+    border-color: #00d397;
+
+}
+
+.incorrect{
+    background: #FFEBEB;
+    border-color: #FF4A4A;
+} */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@400;700&display=swap');
+
+.container {
+    width: 90%;                /* use percentage instead of fixed width */
+    max-width: 640px;          /* still limit max width */
+    min-height: 400px;
+    margin: 100px auto;
+    background: white;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 30px 20px;        /* smaller padding on mobile */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.container hr {
+    height: 2px;
+    border: none;
+    background: #707070;
+}
+
+.container h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Question options */
+.container ul li {
+    display: flex;
+    align-items: center;
+    min-height: 55px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.container ul li:hover {
+    background: #f3f3f3;
+}
+
+/* Button */
+.container button {
+    margin: auto;
+    width: 200px;
+    height: 55px;
+    background: #543e94;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.container button:hover {
+    background: #6a50c6;
+}
+
+/* Index text */
+.container .index {
+    margin: auto;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Answer states */
+.correct {
+    background: #dffff2;
+    border-color: #00d397;
+}
+
+.incorrect {
+    background: #FFEBEB;
+    border-color: #FF4A4A;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+        padding: 20px 15px;
+    }
+
+    .container h2 {
+        font-size: 1.1rem;
+    }
+
+    .container button {
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .container ul li {
+        font-size: 0.9rem;
+        min-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 30px;
+        padding: 15px 10px;
+    }
+
+    .container h2 {
+        font-size: 1rem;
+    }
+
+    .container button {
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .container ul li {
+        font-size: 0.85rem;
+        min-height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .container .index {
+        font-size: 14px;
+    }
+}
