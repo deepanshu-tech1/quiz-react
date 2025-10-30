@@ -13,3 +13,8 @@ If you are developing a production application, we recommend using TypeScript wi
 # reactquiz
 # quiz-react
 # quiz-react
+
+open this file in your vs code 
+and run in terminal cd quiz 
+then.................
+npm run dev
